@@ -9,6 +9,7 @@ void main() {
   print(thisYear);
   thisYear = 2022;
   print(thisYear);
-
-  
+  final double number;
+  number = 34;
+  print(number);
 }
