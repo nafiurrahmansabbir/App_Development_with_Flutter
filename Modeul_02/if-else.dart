@@ -1,16 +1,22 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter 1st number: ");
-  int n1 = int.parse(stdin.readLineSync()!);
-  stdout.write("Enter 2nd number: ");
-  int n2 = int.parse(stdin.readLineSync()!);
+  stdout.write("Enter your mark: ");
+  int mark = int.parse(stdin.readLineSync()!);
 
-  if (n1 > n2) {
-    print("${n1} is Big");
-  } else if (n2 > n1) {
-    print("${n2} is Big");
+  if (mark >= 80 && mark <= 100) {
+    print("A+");
+  } else if (mark >= 70 && mark < 80) {
+    print("A");
+  } else if (mark >= 65 && mark < 70) {
+    print("A-");
+  } else if (mark >= 60 && mark < 65) {
+    print("B");
+  } else if (mark >= 50 && mark < 60) {
+    print("B-");
+  } else if (mark >= 0 && mark < 50) {
+    print("Ewww! Fail!");
   } else {
-    print("Both are equal");
+    print("Invalit number!");
   }
 }
