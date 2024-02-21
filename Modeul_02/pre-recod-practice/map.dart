@@ -1,6 +1,7 @@
 void main() {
-  Map<int ,String> myMap = {
-    1:'Sabbir',
-    2:'Raxin',
+  Map<int, String> myMap = {
+    1: 'Sabbir',
+    2: 'Raxin',
   };
+  print(myMap);
 }
